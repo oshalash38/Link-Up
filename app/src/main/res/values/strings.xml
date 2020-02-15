@@ -10,4 +10,8 @@
     <string name="current_events">Current Events</string>
     <string name="create_new_event">Create New Event</string>
     <string name="add_friends_to_group">Add Friends To The Group</string>
+    <string name="add">Add</string>
+    <string name="list_o_members">List of Group Members:</string>
+    <string name="friend_req">Friend Requests:</string>
+    <string name="title">Link-Up</string>
 </resources>
