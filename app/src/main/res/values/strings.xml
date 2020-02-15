@@ -2,4 +2,8 @@
     <string name="app_name">Link-Up</string>
     <string name="action_settings">Settings</string>
     <string name="add_friend">Add New Friend</string>
+    <string name="create_group">Create Group</string>
+    <string name="groups">Groups</string>
+    <string name="upcoming_meet_ups">Upcoming Meetups</string>
+    <string name="search_username">Search Username</string>
 </resources>
