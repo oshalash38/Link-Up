@@ -6,4 +6,7 @@
     <string name="groups">Groups</string>
     <string name="upcoming_meet_ups">Upcoming Meetups</string>
     <string name="search_username">Search Username</string>
+    <string name="group_A">Group A</string>
+    <string name="current_events">Current Events</string>
+    <string name="create_new_event">Create New Event</string>
 </resources>

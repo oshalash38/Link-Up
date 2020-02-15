@@ -9,14 +9,19 @@
     tools:showIn="@layout/activity_main">
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/button2"
@@ -42,10 +47,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="87dp">
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="vertical" />
+                    app:cardBackgroundColor="#FFC107"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
             </HorizontalScrollView>
 
             <TextView
@@ -61,9 +68,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="105dp"
-                app:cardBackgroundColor="#8BC34A">
-
-            </androidx.cardview.widget.CardView>
+                app:cardBackgroundColor="#8BC34A"
+                android:id="@+id/cardView"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"

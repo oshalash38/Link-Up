@@ -1,5 +1,6 @@
 package com.example.link_up;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -68,5 +69,13 @@ public class MainActivity extends AppCompatActivity {
     public void newActivity(View view){
         Intent intent = new Intent(this, ActivityListener.class);
         startActivity(intent);
+    }
+
+
+    public void newGroup(View view){
+        GenericGroupPage activity = new GenericGroupPage();
+        Intent intent = new Intent(this, GenericGroupPage.class);
+        startActivity(intent);
+
     }
 }
