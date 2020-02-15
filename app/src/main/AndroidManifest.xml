@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GenericGroupPage"></activity>
+        <activity android:name=".GroupPage"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".GenericGroupPage" />
         <activity
             android:name=".ActivityListener"
             android:parentActivityName=".MainActivity"

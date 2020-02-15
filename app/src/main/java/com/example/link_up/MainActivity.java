@@ -37,9 +37,15 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // your handler code here
-                Snackbar.make(v, "Opens new activity", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
                 newActivity(v);
+            }
+        });
+
+        final Button button3 = (Button) findViewById(R.id.button);
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // your handler code here
+                newGroup(v);
             }
         });
     }
@@ -74,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void newGroup(View view){
         GenericGroupPage activity = new GenericGroupPage();
-        Intent intent = new Intent(this, GenericGroupPage.class);
+        Intent intent = new Intent(this, GroupPage.class);
         startActivity(intent);
-
     }
+
 }

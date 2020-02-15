@@ -1,16 +1,14 @@
 package com.example.link_up;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
-public class ActivityListener extends AppCompatActivity {
+public class GroupPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listener);
+        setContentView(R.layout.activity_group_page);
     }
 }
