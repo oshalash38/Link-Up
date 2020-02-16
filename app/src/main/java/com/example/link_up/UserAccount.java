@@ -29,7 +29,7 @@ public class UserAccount {
      * @return boolean
      */
     public boolean acceptFriendRequest(UserAccount friend) {
-        friends.add(friend);
+        this.friends.add(friend);
         return true;
     }
 
