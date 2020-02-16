@@ -56,6 +56,12 @@ public class MainActivity extends AppCompatActivity {
 //                newGroup(v);
 //            }
 //        });
+
+        UserAccount u1 = new UserAccount("oshalash", "12345");
+        u1.friends.add(new UserAccount("A", "A"));
+        u1.friends.add(new UserAccount("B", "B"));
+
+
     }
 
     @Override
@@ -104,11 +110,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-    // Testing Purposes:
-
-    UserAccount u1 = new UserAccount("oshalash38", "12345");
-    
 
 
 }
