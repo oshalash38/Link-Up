@@ -20,7 +20,8 @@
         <activity
             android:name=".GroupPage"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".GenericGroupPage" />
+        <activity android:name=".GenericGroupPage"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ActivityListener"
             android:parentActivityName=".MainActivity"

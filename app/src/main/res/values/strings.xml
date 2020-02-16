@@ -111,4 +111,7 @@
     <string name="new_event">Create New Event</string>
     <string name="event_name">Enter Event Name:</string>
     <string name="group_name">Enter Group Name:</string>
+    <string name="my_vote">My Vote</string>
+    <string name="vote_re">Vote/Revote</string>
+    <string name="blank"></string>
 </resources>

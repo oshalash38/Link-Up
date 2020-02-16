@@ -8,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 import android.view.View;
 import android.view.Menu;
@@ -16,7 +17,10 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
+    public ArrayList<Object> groups = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // your handler code here
                 newGroup(v);
+            }
+        });
+
+
+        final CardView button4 = (CardView) findViewById(R.id.cardView);
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // your handler code here
+                openGroup(v);
             }
         });
 
@@ -94,6 +107,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void newEvent(View v){
         Intent intent = new Intent(this, CreateNewEvent.class);
+        startActivity(intent);
+    }
+
+    public void openGroup(View v){
+        Intent intent = new Intent(this, GenericGroupPage.class);
         startActivity(intent);
     }
 

@@ -28,9 +28,10 @@ public class GroupPage extends AppCompatActivity {
     public void createGroupIcon(View view){
 //        CardView c = new CardView(this);
 //        layout.addView(c);
+        setContentView(R.layout.activity_main);
         Button b = new Button(this);
         b.setText("Beep");
-        LinearLayout layout = (LinearLayout) findViewById(R.id.LL1);
+        LinearLayout layout = (LinearLayout) findViewById(R.id.linearLayout);
         layout.addView(b);
     }
 
