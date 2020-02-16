@@ -1,6 +1,5 @@
 package com.example.link_up;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -33,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                newEvent(view);
             }
         });
 
@@ -53,15 +51,15 @@ public class MainActivity extends AppCompatActivity {
                 newGroup(v);
             }
         });
-        tvw=(TextView)findViewById(R.id.textView1);
-        picker=(DatePicker)findViewById(R.id.datePicker1);
-        btnGet=(Button)findViewById(R.id.button1);
-        btnGet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tvw.setText("Selected Date: "+ picker.getDayOfMonth()+"/"+ (picker.getMonth() + 1)+"/"+picker.getYear());
-            }
-        });
+//        tvw =(TextView)findViewById(R.id.textView13);
+//        picker = (DatePicker)findViewById(R.id.datePicker1);
+//        btnGet = (Button)findViewById(R.id.button13);
+//        btnGet.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                tvw.setText("Selected Date: "+ picker.getDayOfMonth()+"/"+ (picker.getMonth() + 1)+"/"+picker.getYear());
+//            }
+//        });
 
 //        final MenuItem menuItem = (MenuItem) findViewById(R.id.menuFriends);
 //        menuItem.setOnMenuItemClickListener(new View.() {
@@ -110,6 +108,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openFriendList(){
         Intent intent = new Intent(this, FriendList.class);
+        startActivity(intent);
+    }
+
+    public void newEvent(View v){
+        Intent intent = new Intent(this, CreateNewEvent.class);
         startActivity(intent);
     }
 
