@@ -48,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
                 newGroup(v);
             }
         });
+
+//        final MenuItem menuItem = (MenuItem) findViewById(R.id.menuFriends);
+//        menuItem.setOnMenuItemClickListener(new View.() {
+//            public void onClick(View v) {
+//                // your handler code here
+//                newGroup(v);
+//            }
+//        });
     }
 
     @Override
@@ -65,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.menuFriends) {
+            openFriendList();
             return true;
         }
 
@@ -83,5 +92,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, GroupPage.class);
         startActivity(intent);
     }
+
+    public void openFriendList(){
+        Intent intent = new Intent(this, FriendList.class);
+        startActivity(intent);
+    }
+
 
 }

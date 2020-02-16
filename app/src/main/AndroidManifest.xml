@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GroupPage"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+        <activity
+            android:name=".FriendList"
+            android:label="@string/title_activity_friend_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".GroupPage"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".GenericGroupPage" />
         <activity
             android:name=".ActivityListener"
