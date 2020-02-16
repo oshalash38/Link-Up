@@ -9,7 +9,7 @@ public class UserAccount {
      */
     private String username;
     private String password;
-    private ArrayList<UserAccount> friends = new ArrayList<>();
+    public ArrayList<UserAccount> friends = new ArrayList<>();
     private HashMap<Integer, ArrayList<UserAccount>> groups = new HashMap<>();
 
     /**
