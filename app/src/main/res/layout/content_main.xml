@@ -59,14 +59,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        tools:background="@tools:sample/avatars[3]" />
+                        tools:background="@tools:sample/avatars[3]"
+                        android:contentDescription="TODO" />
 
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        tools:background="@tools:sample/avatars[4]" />
+                        tools:background="@tools:sample/avatars[4]"
+                        android:contentDescription="TODO" />
 
                     <ImageView
                         android:id="@+id/imageView2"
