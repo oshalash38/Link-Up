@@ -107,4 +107,8 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="friend_note">You can add new friends from main menu</string>
+    <string name="submit">Finish</string>
+    <string name="new_event">Create New Event</string>
+    <string name="event_name">Enter Event Name:</string>
+    <string name="group_name">Enter Group Name:</string>
 </resources>
