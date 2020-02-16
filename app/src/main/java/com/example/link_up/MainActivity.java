@@ -74,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.menuFriends) {
-            openFriendList();
+            Intent intent = new Intent(this, FriendList.class);
+            startActivity(intent);
             return true;
         }
 
